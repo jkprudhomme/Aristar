@@ -26,27 +26,11 @@
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
         </a-scene>
-
-        <!-- <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250' >
-
-            <a-assets >
-               <video preload="auto"  id="vid" loop="true" crossorigin  webkit-playsinline playsinline controls>
-                  <source  type="video/mp4"  src="test2.mp4">
-                  <h3>Error : Your browser does not support.</h3> -->
-                 <!-- FOR NOTMAL VIDEO YOU CAN USE MP4 or WEBM BUT FOR ALPHA VIDEO YOU NEED TO USE .WEBM FORMAT-->
-               <!-- </video>
-            </a-assets>
-          
-            <a-marker id="animated-marker" type='barcode' value='30' vidhandler>
-               <a-video  id="vid" position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" ></a-video>
-            </a-marker>
-            <a-entity camera></a-entity>
-         </a-scene> -->
-         <div class="footer">
+        <div class="footer">
             <div class="row">
                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left">
                   <div class="onebleft">
-                     <button onclick="vid.play()" class="btn btnskips">Play (CHROME)</button>
+                     <button onclick="vid.play()" class="btn btnskips">Play</button>
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
@@ -55,8 +39,8 @@
                   </div>
                </div>
             </div>
-         </div>
-         <style>
+        </div>
+        <style>
             .footer {
             position: fixed;
             left: 0;
@@ -65,13 +49,13 @@
             color: white;
             }
             .onebleft{
-            padding: 5px 5px 5px 5px;
+            padding: 10px 10px 10px 10px;
             margin: 5px 15px 5px 5px ;
             float: left;
             z-index: 900000000000;
             }
             .onebright{
-            padding: 5px 5px 5px 5px;
+            padding: 10px 10px 10px 10px;
             margin: 5px 15px 5px 5px ;
             float: right;
             z-index: 900000000000;
@@ -132,7 +116,7 @@
             .a-enter-vr-button{
             display: none !important;
             }
-         </style> 
+        </style> 
     </body>
 </html>
 
