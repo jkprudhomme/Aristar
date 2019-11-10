@@ -10,7 +10,6 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
-        we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <a-assets>
@@ -32,7 +31,7 @@
                     <button onclick="vid.play()" class="btn btnskips">Play</button>
                 </div>
                 <div class="oneb">
-                    <button onclick="vid.play()" class="btn btnskips">Play</button>
+                    <button onclick="vid.pause()" class="btn btnskips">Pause</button>
                 </div>
                 <div class="oneb">
                     <button onclick="refrespage()" class="btn btnskips">Refresh</button>
